@@ -23,6 +23,8 @@
 }
 
 .table-custom td {
-    color: #333; /* Cor do texto nas células */
     font-size: 14px; /* Tamanho da fonte nas células */
+}
+.text-danger {
+    color: red; /* Define a cor do texto como vermelho */
 }

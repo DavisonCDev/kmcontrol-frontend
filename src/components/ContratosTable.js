@@ -9,6 +9,7 @@ const ContratosTable = () => {
         const fetchContratos = async () => {
             try {
                 const response = await axios.get('http://localhost:8080/api/contratos/ultimos');
+                console.log(response.data); // Verifique os dados aqui
                 setContratos(response.data);
             } catch (error) {
                 console.error("Erro ao buscar contratos:", error);
@@ -33,7 +34,10 @@ const ContratosTable = () => {
             </thead>
             <tbody>
                 {contratos.map((contrato) => (
-                    <tr key={contrato.id}>
+                    <tr 
+                        key={contrato.id} 
+                        style={{ color: (contrato.fazerRevisao || contrato.kmExcedido) ? 'red' : '#333' }} // Aplicação direta da cor
+                    >
                         <td>{contrato.numeroContrato}</td>
                         <td>{contrato.dataRegistro}</td>
                         <td>{contrato.condutorPrincipal}</td>
