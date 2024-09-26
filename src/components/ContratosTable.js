@@ -23,6 +23,7 @@ const ContratosTable = () => {
             <thead>
                 <tr>
                     <th>Numero do Contrato</th>
+                    <th>Data de Registro</th>
                     <th>Condutor Principal</th>
                     <th>Modelo</th>
                     <th>Placa</th>
@@ -34,6 +35,7 @@ const ContratosTable = () => {
                 {contratos.map((contrato) => (
                     <tr key={contrato.id}>
                         <td>{contrato.numeroContrato}</td>
+                        <td>{contrato.dataRegistro}</td>
                         <td>{contrato.condutorPrincipal}</td>
                         <td>{contrato.modelo}</td>
                         <td>{contrato.placa}</td>

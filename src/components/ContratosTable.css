@@ -1,15 +1,15 @@
 .table-custom {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px; /* Espaço acima da tabela */
-    border-radius: 8px; /* Cantos arredondados */
-    overflow: hidden; /* Para manter os cantos arredondados */
+    max-width: 1200px; /* Defina uma largura máxima */
+    margin: 20px auto; /* Centraliza a tabela e adiciona espaço em cima */
+    border-radius: 10px; /* Cantos arredondados */
+    overflow: hidden; /* Para aplicar bordas arredondadas corretamente */
 }
 
 .table-custom th,
 .table-custom td {
     border: 1px solid #add8e6; /* Borda da tabela em azul bem clarinho */
-    padding: 12px; /* Espaçamento interno das células */
+    padding: 7px; /* Espaçamento interno das células */
     text-align: left;
 }
 
@@ -25,5 +25,5 @@
 
 .table-custom td {
     color: #333; /* Cor do texto nas células */
-    font-size: 16px; /* Tamanho da fonte nas células */
+    font-size: 14px; /* Tamanho da fonte nas células */
 }
