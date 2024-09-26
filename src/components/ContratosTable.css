@@ -1,0 +1,29 @@
+.table-custom {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Espaço acima da tabela */
+    border-radius: 8px; /* Cantos arredondados */
+    overflow: hidden; /* Para manter os cantos arredondados */
+}
+
+.table-custom th,
+.table-custom td {
+    border: 1px solid #add8e6; /* Borda da tabela em azul bem clarinho */
+    padding: 12px; /* Espaçamento interno das células */
+    text-align: left;
+}
+
+.table-custom th {
+    background-color: #e0f7fa; /* Cor de fundo do cabeçalho da tabela */
+    color: #2c2c2c; /* Cor do texto do cabeçalho */
+    font-weight: bold; /* Negrito no cabeçalho */
+}
+
+.table-custom tr:nth-child(even) {
+    background-color: #f9f9f9; /* Cor de fundo para linhas pares */
+}
+
+.table-custom td {
+    color: #333; /* Cor do texto nas células */
+    font-size: 16px; /* Tamanho da fonte nas células */
+}

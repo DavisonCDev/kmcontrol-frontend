@@ -1,0 +1,20 @@
+.button {
+    background-color: #add8e6; /* Azul bem clarinho */
+    border: none;
+    color: #000; /* Cor do texto */
+    padding: 5px 5px; /* Botões um pouco menores */
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Para que os botões fiquem em coluna */
+    font-size: 14px; /* Tamanho da fonte reduzido */
+    margin: 8px 0;
+    cursor: pointer;
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+
+.custom-button:hover {
+    background-color: #b0e0e6; /* Cor de fundo ao passar o mouse */
+    color: #7cb39f; /* Cor do texto ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}

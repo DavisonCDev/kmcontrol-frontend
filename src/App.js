@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ContratosTable from './components/ContratosTable';
+import Menu from './components/Menu';
+import './App.css'; // Certifique-se de que esse arquivo existe
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div className="container-fluid">
+            <h1 className="text-center my-4">KM CONTROL</h1>
+            <div className="row">
+                <div className="col-md-3">
+                    <h5>Menu</h5>
+                    <Menu />
+                </div>
+                <div className="col-md-9">
+                    <ContratosTable />
+                </div>
+            </div>
+        </div>
+    );
+};
 
 export default App;
