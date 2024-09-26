@@ -1,20 +1,23 @@
-.button {
+.custom-button {
     background-color: #add8e6; /* Azul bem clarinho */
     border: none;
     color: #000; /* Cor do texto */
-    padding: 5px 5px; /* Botões um pouco menores */
+    padding: 4px 10px; /* Ajuste do padding para botões mais estreitos */
     text-align: center;
     text-decoration: none;
     display: block; /* Para que os botões fiquem em coluna */
-    font-size: 14px; /* Tamanho da fonte reduzido */
-    margin: 8px 0;
+    font-size: 1rem; /* Usando rem para uma fonte mais dinâmica */
+    margin: 4px 0; /* Espaço entre os botões */
     cursor: pointer;
     border-radius: 5px; /* Bordas arredondadas */
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+    transition: background-color 0.3s; /* Transição suave para hover */
 }
+
 
 
 .custom-button:hover {
     background-color: #b0e0e6; /* Cor de fundo ao passar o mouse */
-    color: #7cb39f; /* Cor do texto ao passar o mouse */
+    color: #000000; /* Cor do texto ao passar o mouse */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
 }

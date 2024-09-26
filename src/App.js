@@ -6,7 +6,7 @@ import './App.css'; // Certifique-se de que esse arquivo existe
 const App = () => {
     return (
         <div className="container-fluid">
-            <h1 className="text-center my-4">KM CONTROL</h1>
+            <h1 className="text-center my-4">K M C O N T R O L</h1>
             <div className="row">
                 <div className="col-md-3">
                     <h5>Menu</h5>

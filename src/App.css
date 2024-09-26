@@ -8,6 +8,12 @@
 
 h1 {
   color: #00796b; /* Cor do título */
+    text-align: center; /* Centraliza o texto */
+    font-size: 2.5rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Sombreamento suave */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    letter-spacing: 1px; /* Espaçamento entre letras */
 }
 
 .container {
@@ -16,7 +22,10 @@ h1 {
 }
 
 .menu {
-  width: 200px; /* Largura do menu */
-  padding: 15px;
-  border-right: 2px solid #00796b; /* Borda do menu */
+  color: #00796b; /* Cor do título */
+    font-size: 1.8rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Sombreamento suave */
+    margin-bottom: 15px; /* Espaço abaixo do título */
+    letter-spacing: 1px; /* Espaçamento entre letras */
 }
