@@ -10,13 +10,12 @@
 .table-custom td {
     border: 1px solid #add8e6; /* Borda da tabela em azul bem clarinho */
     padding: 7px; /* Espaçamento interno das células */
-    text-align: left;
+    text-align: center;
 }
 
 .table-custom th {
     background-color: #e0f7fa; /* Cor de fundo do cabeçalho da tabela */
-    color: #2c2c2c; /* Cor do texto do cabeçalho */
-    font-weight: bold; /* Negrito no cabeçalho */
+    color: #605454; /* Cor do texto do cabeçalho */
 }
 
 .table-custom tr:nth-child(even) {
