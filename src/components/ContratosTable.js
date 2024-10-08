@@ -8,7 +8,7 @@ const ContratosTable = () => {
     useEffect(() => {
         const fetchContratos = async () => {
             try {
-                const response = await axios.get('http://localhost:8080/api/contratos/ultimos');
+                const response = await axios.get('http://localhost:8081/api/contratos/ultimos');
                 console.log(response.data); // Verifique os dados aqui
                 setContratos(response.data);
             } catch (error) {
@@ -25,6 +25,7 @@ const ContratosTable = () => {
                 <tr>
                     <th>Numero do Contrato</th>
                     <th>Data de Registro</th>
+                    <th>Próxima Vigência</th>
                     <th>Condutor Principal</th>
                     <th>Modelo</th>
                     <th>Placa</th>
@@ -40,6 +41,7 @@ const ContratosTable = () => {
                     >
                         <td>{contrato.numeroContrato}</td>
                         <td>{contrato.dataRegistro}</td>
+                        <td>{contrato.dataVigencia}</td>
                         <td>{contrato.condutorPrincipal}</td>
                         <td>{contrato.modelo}</td>
                         <td>{contrato.placa}</td>
