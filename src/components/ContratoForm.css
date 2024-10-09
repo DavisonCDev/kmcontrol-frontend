@@ -1,0 +1,78 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Fundo escuro, sem transparência no modal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #ffffff; /* Fundo branco, opaco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 90%; /* Largura responsiva */
+    max-width: 500px; /* Largura máxima */
+    max-height: 80vh; /* Altura máxima */
+    overflow-y: auto; /* Permite rolagem vertical */
+    opacity: 1; /* Certifica que o modal é opaco */
+}
+
+h2 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #00796b; /* Cor do título */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espaço entre os campos */
+}
+
+label {
+    display: block; /* Faz o label ocupar toda a largura */
+    margin-bottom: 5px; /* Espaço abaixo do label */
+    color: #aad8d0; /* Cor do texto */
+}
+
+input {
+    width: 100%; /* Largura total do campo */
+    padding: 10px; /* Espaço interno do campo */
+    border: 1px solid #add8e6; /* Borda clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Para incluir padding na largura */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Espaço entre os botões */
+}
+
+.btn {
+    padding: 10px 15px; /* Espaçamento interno dos botões */
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+.btn-primary {
+    background-color: #add8e6; /* Cor do botão principal */
+    color: #000; /* Cor do texto no botão */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.btn-secondary {
+    background-color: #ccc; /* Cor do botão secundário */
+    color: #000; /* Cor do texto no botão */
+}
+
+.btn-primary:hover {
+    background-color: #b0e0e6; /* Cor de fundo ao passar o mouse */
+    color: #000; /* Cor do texto ao passar o mouse */
+}
+
+.btn-secondary:hover {
+    background-color: #bbb; /* Cor do botão secundário ao passar o mouse */
+}
